@@ -7,7 +7,7 @@ app = Flask(__name__)
 @app.route("/")
 def home():
     lenguajesFav = ["Python", "Java", "HTML", "JAVASCRIPT"]
-    return jsonify(lenguajesFav)
+    return(lenguajesFav)
 
 if __name__ == '__main__':
     app.run(debug=True)
